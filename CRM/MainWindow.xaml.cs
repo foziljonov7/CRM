@@ -20,5 +20,8 @@ namespace CRM
         {
             InitializeComponent();
         }
+
+        private void Close_click(object sender, RoutedEventArgs e)
+            => this.Close();
     }
 }

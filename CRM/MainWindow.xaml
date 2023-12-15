@@ -87,29 +87,84 @@
             </Grid.RowDefinitions>
             <Grid Grid.Row="0">
                 <Image x:Name="DashboardIcon"
-                       Source="/Images/Icons/graduation-hat_5539741.png"
+                       Source="D:\dev\Edu\Edu.ControlSystem\University.Dashboard\University.Dashboard\Images\Icons\graduation-hat_5539741.png"
                        Height="60"
                        Width="60"
                        HorizontalAlignment="Left"
                        VerticalAlignment="Center"
-                       Margin="68,0,0,0"/>
+                       Margin="60,0,0,0"/>
                 <Label x:Name="DashboardName"
                        Content="EDU"
                        FontSize="40"
-                       HorizontalAlignment="Left"
+                       HorizontalAlignment="Right"
                        VerticalAlignment="Center"
-                       Margin="125,0,0,0"
+                       Margin="0,0,60,0"
                        FontFamily="Segoe UI bold"
                        Foreground="#023047"/>
             </Grid>
             <Grid Grid.Row="1">
-                <Button Style="{DynamicResource DashboardBtnStyle}" x:Name="DashboardBtn"
+                <Button Style="{DynamicResource DashboardBtnStyle}" 
+                        x:Name="DashboardBtn"
                         Content="Dashboard"
                         FontSize="22"
                         Background="Transparent"
-                        BorderThickness="0"
-                        FontFamily="Segou UI semibold"
+                        FontFamily="Segoe UI semibold"
                         Foreground="#023047"/>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Button Style="{DynamicResource DashboardBtnStyle}" 
+                        x:Name="CourseBtn"
+                        Content="Courses"
+                        FontSize="22"
+                        Background="Transparent"
+                        FontFamily="Segoe UI semibold"
+                        Foreground="#023047"/>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Button Style="{DynamicResource DashboardBtnStyle}" 
+                        x:Name="StudentBtn"
+                        Content="Students"
+                        FontSize="22"
+                        Background="Transparent"
+                        FontFamily="Segoe UI semibold"
+                        Foreground="#023047"/>
+            </Grid>
+            <Grid Grid.Row="4">
+                <Button Style="{DynamicResource DashboardBtnStyle}" 
+                        x:Name="TeacherBtn"
+                        Content="Teachers"
+                        FontSize="22"
+                        Background="Transparent"
+                        FontFamily="Segoe UI semibold"
+                        Foreground="#023047"/>
+            </Grid>
+            <Grid Grid.Row="5">
+                <Button Style="{DynamicResource DashboardBtnStyle}" 
+                        x:Name="CategoryBtn"
+                        Content="Category"
+                        FontSize="22"
+                        Background="Transparent"
+                        FontFamily="Segoe UI semibold"
+                        Foreground="#023047"/>
+            </Grid>
+            <Grid Grid.Row="6">
+                <Button Style="{DynamicResource DashboardBtnStyle}" 
+                        x:Name="Propertiesbtn"
+                        Content="Properties"
+                        FontSize="22"
+                        Background="Transparent"
+                        FontFamily="Segoe UI semibold"
+                        Foreground="#023047"/>
+            </Grid>
+            <Grid Grid.Row="7">
+                <Button Style="{DynamicResource DashboardBtnStyle}" 
+                        x:Name="CloseBtn"
+                        Content="Close"
+                        Click="Close_click"
+                        FontSize="22"
+                        Background="Transparent"
+                        FontFamily="Segoe UI semibold"
+                        Foreground="#c1121f"/> 
             </Grid>
         </Grid>
     </Grid>
