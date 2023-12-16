@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using CRM.UserControls;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -23,5 +24,16 @@ namespace CRM
 
         private void Close_click(object sender, RoutedEventArgs e)
             => this.Close();
+
+        public void AddUserControl(UserControl userControl)
+        {
+            MenuGrid.Children.Clear();
+            MenuGrid.Children.Add(userControl);
+        }
+        private void DasshboardClick(object sender, RoutedEventArgs e)
+        {
+            DashboardUserControl window = new DashboardUserControl();
+            AddUserControl(window);
+        }
     }
 }
